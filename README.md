@@ -1,2 +1,3 @@
-# data-donuts-apr2024
+# Data & Donuts
+
 Data &amp; Donuts workshop on Reproducible Research

@@ -1,0 +1,106 @@
+---
+title: "Getting Started with Reproducible Research..."
+subtitle: "...that's good enough"
+format:
+    revealjs:
+        theme: simple
+        slide-number: true
+        logo: logo/color.jpg
+        footer: <https://openscialliance.github.io/>
+---
+
+## Goal: Make Research Reproducible
+
+What?
+
+![_The Turing Way_ project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.](https://the-turing-way.netlify.app/_images/research-cycle.svg)
+
+## Different kinds of "reproducible"
+
+Reproducible
+Replicable
+Robust
+Generalizable
+
+Today, we're focused on "Reproducible"
+
+::: {.notes}
+We're focused today on the reproducible dimension, but it's good to know and understand these other dimensions, as Open Science encompasses them all.
+:::
+
+## Goal: Make Research Reproducible
+
+Why?
+
+::: {.notes}
+Take a poll on the "why"!
+
+Some good answers:
+ - Scientific evidence is strengthened if it can be replicated by others ("standing on the shoulders of giants")
+ - Builds trust in the community
+ - Gives researchers a "head start" on new investigations
+ - "Negative results" can be published easily, helping others avoid time wasting pitfalls
+
+1. Track a complete history of your work ("Provenance")
+2. Facilitate collaboration and review
+3. Build confidence in published work
+4. Get credit for your work
+5. Ensure continuity
+6. Efficiency!
+
+Yes, efficiency! There's admittedly a start-up cost in adopting these strategies, but time-saving across the board when we're confident our work is reproducible.
+:::
+
+
+## Goal: Make Research Reproducible
+
+How?
+
+Lots of ways!
+
+::: {.notes}
+TONS of ways to make your work reproducible. Today we'll only cover a few.
+:::
+
+## Barriers to Reproducibility
+
+If reproducibility is so great, why are we here in 2024 learning about it?
+
+::: {.notes}
+Again, take a poll. Some good answers:
+
+ - publication bias toward novel results
+ - too much time
+ - requires learning new skills
+ - no reward (e.g. job promotion)
+ - personal: people might discover I'm wrong
+:::
+
+## Reproducibility is hard
+
+Fortunately, reproducibility is not "all-or-nothing"; even _some_ elements are better than none!
+
+**Today, let's focus on "good enough": the least amount of work to get a respectably reproducible research project.**
+
+## What we'll cover today
+
+::: {.incremental}
+1. Version control
+   - No command line; just web
+   - Folder structure for your project
+   - Set up on GitHub
+2. Licensing
+   - Sounds boring, I know
+   - Very important if anyone who isn't you will be using your code or data
+3. Environments
+   - Where most of the difficulty arises ("it works on _my_ computer...")
+   - Introduce BinderHub
+:::
+
+## Step 1: Version Control
+
+
+
+## Step 2: Licensing
+
+## Step 3: Environments
