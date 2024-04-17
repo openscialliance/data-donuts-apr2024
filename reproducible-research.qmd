@@ -17,7 +17,7 @@ What?
 
 ## Different kinds of "reproducible"
 
-![Definitions of reproducible research.](assets/reproducible-matrix.jpg)
+![Definitions of reproducible research. DOI: 10.5281/zenodo.3332807.](assets/reproducible-matrix.jpg)
 
 Today, we're focused on "Reproducible"
 
@@ -118,7 +118,7 @@ Some good answers:
 
 ## Why version control
 
-![Tracking project history.](assets/project-history.svg)
+![Tracking project history. DOI: 10.5281/zenodo.3332807.](assets/project-history.svg)
 
 ::: {.incremental}
 
@@ -145,9 +145,9 @@ Some good answers:
 
 ## Version control workflow
 
-![One branch.](assets/main-branch.png)
+![One branch. DOI: 10.5281/zenodo.3332807.](assets/main-branch.png)
 
-![Many branches.](assets/sub-branch.png)
+![Many branches. DOI: 10.5281/zenodo.3332807.](assets/sub-branch.png)
 
 ## Step 2: Licensing
 
@@ -187,7 +187,7 @@ Some good answers:
 
 ## How to "capture" an environment
 
-![Computational environments.](assets/computational-environments.png)
+![Computational environments. DOI: 10.5281/zenodo.3332807.](assets/computational-environments.png)
 
 ::: {.incremental}
 1. Virtual machines
