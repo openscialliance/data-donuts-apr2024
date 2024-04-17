@@ -86,21 +86,149 @@ Fortunately, reproducibility is not "all-or-nothing"; even _some_ elements are b
 
 ::: {.incremental}
 1. Version control
-   - No command line; just web
-   - Folder structure for your project
-   - Set up on GitHub
 2. Licensing
-   - Sounds boring, I know
-   - Very important if anyone who isn't you will be using your code or data
 3. Environments
-   - Where most of the difficulty arises ("it works on _my_ computer...")
-   - Introduce BinderHub
+:::
+
+::: {.notes}
+Versioning:
+ - No command line git or coding; just a web interface and some filesystem munging (like creating folders)
+ - We'll set up a repo on GitHub and I'll demonstrate a sample project folder structure for organizing your reproducible research project
+
+Licensing:
+ - I know it sounds boring but if you anticipate anyone other than yourself using, adding to, modifying, or otherwise touching your work, you need a license.
+
+Environments:
+ - Probably the single most difficult part of making research reproducible
+ - A little bit about environment management
+ - Introduction to BinderHub
 :::
 
 ## Step 1: Version Control
+
+Version control is a workflow where the entire history of a set of documents is preserved.
+
+**Why do we want our work under version control?**
+
+::: {.notes}
+
+Some good answers:
+ - You can see everything added, removed, and changed at any point
+ - You can review changes before they are made "official"
+ - You can revert back to a previous version
+ - You can restore a previous checkpoint if you lose your work
+
+:::
+
+## Why version control
+
+::: {.incremental}
+
+- Provenance
+- Version history
+- Hide older versions
+- Distributed work
+:::
+
+::: {.notes}
+- Provenance is the full history of something. This can be useful for many reasons, but one is so that invariable version changes in the underlying software or its dependencies can be understood so we know how e.g. a figure was generated, by looking at the history.
+- Version history gives an auditable trail for why certain changes were made.
+- Anyone have giant commented-out blocks of code? You can delete it now, safe in the knowledge that it still exists in the history you're recording through version control. If you need that code again, just go back to the version where it existed.
+- Multiple different people can work on different parts, then merge their contributions--with their own histories intact!--so you have a complete picture even as more people are contributing.
+:::
+
+## Create an account on GitHub
+
+## Create a repo
+
+## Create a folder structure
+
+## Add everything to version control
+
+## Version control workflow
 
 
 
 ## Step 2: Licensing
 
+Licensing is how to spell out the rights of others to use, modify, or build on our work.
+
+**Why is it important to give our work (code, data, content) a license?**
+
+::: {.notes}
+Some good answers:
+- It's important to know how your work can be used when you put it out there
+- It's important to know how you can use other people's work in your own research
+- It's VERY important to know what your rights are should someone use your work in a way you did not intend (or if someone tries to take credit for your work)
+:::
+
+## Patents, Trademarks, and Copyright
+
+## Choosing a license
+
+https://choosealicense.com/
+
+## Adding a license file to your repo
+
 ## Step 3: Environments
+
+Making your environment reproducible means configuring your work space--code, software, programs, even operating system--so that it is identical to the environment in which the research was originally done.
+
+**Why is it important to have reproducible environments?**
+
+::: {.notes}
+Some good answers:
+
+- The same person coming back to work they've paused for a few months may be unable to get their code to run, as surrounding software has changed and updated in that time.
+- Getting a collaborator to run your code--how many times have we said "well it works on MY machine"?
+- If anyone wanted to replicate your results, they would need a detailed breakdown of your environment.
+- Debugging your code inherently relies on knowledge of what has changed and what has remained constant since the code last functioned correctly. Confidence in a replicable environment is critical for this process.
+:::
+
+## How to "capture" an environment
+
+::: {.incremental}
+1. Virtual machines
+2. Docker / containers
+3. Conda / Mamba
+4. Binder
+:::
+
+::: {.notes}
+- VMs are maybe the "easiest", but certainly the most massive, ways of passing an environment around. The drawback is the size: they often clock in well into the GBs. Preferable to this would be something more akin to a _recipe_ for building an environment locally.
+- This "recipe" idea is what containers aim for. Dockerfiles enumerate the "recipe" for the environment, which are excecuted locally to build it.
+- Where VMs and containers recreate entire compute environments, conda / mamba are package managers that are specific to coding environments (they often exist within VMs or containers). They can also specify recipes of specific coding packages and their versions that comprise a research environment.
+- Binder is a self-contained platform that builds a coding environment like conda/mamba but without needing the command line or a local VM or container; all you need is a repo (on GitHub) and a web browser.
+:::
+
+## Virtual machines
+
+VirtualBox or Vagrant
+
+## Containers
+
+Docker
+Dockerfiles
+Sharing images with DockerHub
+
+## Package management systems
+
+Conda / mamba
+
+Using YAML to specify the environments
+
+## Binder
+
+Binder and BinderHub
+
+Creating a repo to use in Binder
+
+## So much more
+
+Continuous integration, code testing, open access, study preregistration
+
+Links where you can learn more
+
+For now: research data management!
+
+
