@@ -13,14 +13,11 @@ format:
 
 What?
 
-![_The Turing Way_ project illustration by Scriberia. Used under a CC-BY 4.0 licence. DOI: 10.5281/zenodo.3332807.](https://the-turing-way.netlify.app/_images/research-cycle.svg)
+![_The Turing Way_ project illustration by Scriberia. DOI: 10.5281/zenodo.3332807.](assets/research-cycle.svg)
 
 ## Different kinds of "reproducible"
 
-Reproducible
-Replicable
-Robust
-Generalizable
+![Definitions of reproducible research.](assets/reproducible-matrix.jpg)
 
 Today, we're focused on "Reproducible"
 
@@ -50,7 +47,6 @@ Some good answers:
 
 Yes, efficiency! There's admittedly a start-up cost in adopting these strategies, but time-saving across the board when we're confident our work is reproducible.
 :::
-
 
 ## Goal: Make Research Reproducible
 
@@ -122,6 +118,8 @@ Some good answers:
 
 ## Why version control
 
+![Tracking project history.](assets/project-history.svg)
+
 ::: {.incremental}
 
 - Provenance
@@ -147,7 +145,9 @@ Some good answers:
 
 ## Version control workflow
 
+![One branch.](assets/main-branch.png)
 
+![Many branches.](assets/sub-branch.png)
 
 ## Step 2: Licensing
 
@@ -186,6 +186,8 @@ Some good answers:
 :::
 
 ## How to "capture" an environment
+
+![Computational environments.](assets/computational-environments.png)
 
 ::: {.incremental}
 1. Virtual machines
