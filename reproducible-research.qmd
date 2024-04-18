@@ -15,6 +15,10 @@ What?
 
 ![_The Turing Way_ project illustration by Scriberia. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/research-cycle.svg)
 
+::: {.notes}
+What is reproducible reesearch? 
+:::
+
 ## Different kinds of "reproducible"
 
 ![[DOI](https://doi.org/10.5281/zenodo.3332807).](assets/reproducible-matrix.jpg)
@@ -33,6 +37,7 @@ Why?
 Take a poll on the "why"!
 
 Some good answers:
+
  - Scientific evidence is strengthened if it can be replicated by others ("standing on the shoulders of giants")
  - Builds trust in the community
  - Gives researchers a "head start" on new investigations
@@ -104,13 +109,16 @@ Even _some_ reproducibility is better than none!
 
 ::: {.notes}
 Versioning:
+
  - No command line git or coding; just a web interface and some filesystem munging (like creating folders)
  - We'll set up a repo on GitHub and I'll demonstrate a sample project folder structure for organizing your reproducible research project
 
 Licensing:
+
  - I know it sounds boring but if you anticipate anyone other than yourself using, adding to, modifying, or otherwise touching your work, you need a license.
 
 Environments:
+
  - Probably the single most difficult part of making research reproducible
  - A little bit about environment management
  - Introduction to BinderHub
@@ -125,6 +133,7 @@ Version control is a workflow where the entire history of a set of documents is 
 ::: {.notes}
 
 Some good answers:
+
  - You can see everything added, removed, and changed at any point
  - You can review changes before they are made "official"
  - You can revert back to a previous version
@@ -134,7 +143,7 @@ Some good answers:
 
 ## Why version control
 
-![Tracking project history. DOI: 10.5281/zenodo.3332807.](assets/project-history.svg)
+![Tracking project history. [DOI](https://doi.org/10.5281/zenodo.2669547).](assets/project-history.svg)
 
 ::: {.incremental}
 
@@ -145,6 +154,7 @@ Some good answers:
 :::
 
 ::: {.notes}
+
 - Provenance is the full history of something. This can be useful for many reasons, but one is so that invariable version changes in the underlying software or its dependencies can be understood so we know how e.g. a figure was generated, by looking at the history.
 - Version history gives an auditable trail for why certain changes were made.
 - Anyone have giant commented-out blocks of code? You can delete it now, safe in the knowledge that it still exists in the history you're recording through version control. If you need that code again, just go back to the version where it existed.
@@ -201,6 +211,12 @@ Fill out the form information.
 
 ![Many branches. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/sub-branch.png)
 
+::: {.notes}
+I won't go over the technical details of version control here, but suffice to say it can look like either one of these workflows. Each node is a checkpoint, and the connections between them indicate changes from that checkpoint.
+
+Your "trees" can get quite complicated, depending on the size of the project and the number of collaborators! But it helps at least discretize the contributions, make the working spaces concrete, and prevent the buildup of FINALFINALFINAL documents being emailed.
+:::
+
 ## 🪪 Licensing
 
 Licensing is how to spell out the rights of others to use, modify, or build on our work.
@@ -209,6 +225,7 @@ Licensing is how to spell out the rights of others to use, modify, or build on o
 
 ::: {.notes}
 Some good answers:
+
 - It's important to know how your work can be used when you put it out there
 - It's important to know how you can use other people's work in your own research
 - It's VERY important to know what your rights are should someone use your work in a way you did not intend (or if someone tries to take credit for your work)
@@ -358,13 +375,15 @@ Take this survey before leaving today!
  - Grab some ☕️ and 🍩
  - Dr. Kyle Johnsen on collaborative exercises around reproducible research practices
 
+![](assets/qr_postworkshop_survey.png)
+
 ## Resources
 
 ::: {.r-fit-text}
-1. [The Turing Way](https://book.the-turing-way.org/)
+1. Open Science Alliance (OSA) [website](https://openscialliance.github.io/), [GitHub organization](https://github.com/openscialliance/), and [repository for this workshop](https://github.com/openscialliance/data-donuts-apr2024)
 2. [Reproducible Project Template](https://github.com/the-turing-way/reproducible-project-template)
 3. [Cookiecutter Template](https://github.com/cookiecutter/cookiecutter)
-4. Open Science Alliance (OSA) [website](https://openscialliance.github.io/), [GitHub organization](https://github.com/openscialliance/), and [repository for this workshop](https://github.com/openscialliance/data-donuts-apr2024)
+4. [The Turing Way](https://book.the-turing-way.org/)
 5. [Open Science Foundation](https://osf.io/) (OSF)
 6. [Center for Open Science (COS)](https://www.cos.io/)
 7. [Choose a License](https://choosealicense.com/) workflow

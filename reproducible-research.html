@@ -336,7 +336,20 @@
 <h2>Goal: Make Research Reproducible</h2>
 <p>What?</p>
 
-<img data-src="assets/research-cycle.svg" class="r-stretch quarto-figure-center"><p class="caption"><em>The Turing Way</em> project illustration by Scriberia. <a href="https://doi.org/10.5281/zenodo.3332807">DOI</a>.</p></section>
+<img data-src="assets/research-cycle.svg" class="r-stretch quarto-figure-center"><p class="caption"><em>The Turing Way</em> project illustration by Scriberia. <a href="https://doi.org/10.5281/zenodo.3332807">DOI</a>.</p><aside class="notes">
+<p>What is reproducible reesearch?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
 <section id="different-kinds-of-reproducible" class="slide level2">
 <h2>Different kinds of “reproducible”</h2>
 
@@ -360,7 +373,13 @@
 <p>Why?</p>
 <aside class="notes">
 <p>Take a poll on the “why”!</p>
-<p>Some good answers: - Scientific evidence is strengthened if it can be replicated by others (“standing on the shoulders of giants”) - Builds trust in the community - Gives researchers a “head start” on new investigations - “Negative results” can be published easily, helping others avoid time wasting pitfalls</p>
+<p>Some good answers:</p>
+<ul>
+<li>Scientific evidence is strengthened if it can be replicated by others (“standing on the shoulders of giants”)</li>
+<li>Builds trust in the community</li>
+<li>Gives researchers a “head start” on new investigations</li>
+<li>“Negative results” can be published easily, helping others avoid time wasting pitfalls</li>
+</ul>
 <ol type="1">
 <li>Track a complete history of your work (“Provenance”)</li>
 <li>Facilitate collaboration and review</li>
@@ -462,9 +481,21 @@
 </ol>
 </div>
 <aside class="notes">
-<p>Versioning: - No command line git or coding; just a web interface and some filesystem munging (like creating folders) - We’ll set up a repo on GitHub and I’ll demonstrate a sample project folder structure for organizing your reproducible research project</p>
-<p>Licensing: - I know it sounds boring but if you anticipate anyone other than yourself using, adding to, modifying, or otherwise touching your work, you need a license.</p>
-<p>Environments: - Probably the single most difficult part of making research reproducible - A little bit about environment management - Introduction to BinderHub</p>
+<p>Versioning:</p>
+<ul>
+<li>No command line git or coding; just a web interface and some filesystem munging (like creating folders)</li>
+<li>We’ll set up a repo on GitHub and I’ll demonstrate a sample project folder structure for organizing your reproducible research project</li>
+</ul>
+<p>Licensing:</p>
+<ul>
+<li>I know it sounds boring but if you anticipate anyone other than yourself using, adding to, modifying, or otherwise touching your work, you need a license.</li>
+</ul>
+<p>Environments:</p>
+<ul>
+<li>Probably the single most difficult part of making research reproducible</li>
+<li>A little bit about environment management</li>
+<li>Introduction to BinderHub</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -482,7 +513,13 @@
 <p>Version control is a workflow where the entire history of a set of documents is preserved.</p>
 <p><strong>Why do we want our work under version control?</strong></p>
 <aside class="notes">
-<p>Some good answers: - You can see everything added, removed, and changed at any point - You can review changes before they are made “official” - You can revert back to a previous version - You can restore a previous checkpoint if you lose your work</p>
+<p>Some good answers:</p>
+<ul>
+<li>You can see everything added, removed, and changed at any point</li>
+<li>You can review changes before they are made “official”</li>
+<li>You can revert back to a previous version</li>
+<li>You can restore a previous checkpoint if you lose your work</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -498,7 +535,7 @@
 <section id="why-version-control" class="slide level2">
 <h2>Why version control</h2>
 
-<img data-src="assets/project-history.svg" class="r-stretch quarto-figure-center"><p class="caption">Tracking project history. DOI: 10.5281/zenodo.3332807.</p><div>
+<img data-src="assets/project-history.svg" class="r-stretch quarto-figure-center"><p class="caption">Tracking project history. <a href="https://doi.org/10.5281/zenodo.2669547">DOI</a>.</p><div>
 <ul>
 <li class="fragment">Provenance</li>
 <li class="fragment">Version history</li>
@@ -596,13 +633,32 @@
 <figcaption>Many branches. <a href="https://doi.org/10.5281/zenodo.3332807">DOI</a>.</figcaption>
 </figure>
 </div>
+<aside class="notes">
+<p>I won’t go over the technical details of version control here, but suffice to say it can look like either one of these workflows. Each node is a checkpoint, and the connections between them indicate changes from that checkpoint.</p>
+<p>Your “trees” can get quite complicated, depending on the size of the project and the number of collaborators! But it helps at least discretize the contributions, make the working spaces concrete, and prevent the buildup of FINALFINALFINAL documents being emailed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="licensing" class="slide level2">
 <h2>🪪 Licensing</h2>
 <p>Licensing is how to spell out the rights of others to use, modify, or build on our work.</p>
 <p><strong>Why is it important to give our work (code, data, content) a license?</strong></p>
 <aside class="notes">
-<p>Some good answers: - It’s important to know how your work can be used when you put it out there - It’s important to know how you can use other people’s work in your own research - It’s VERY important to know what your rights are should someone use your work in a way you did not intend (or if someone tries to take credit for your work)</p>
+<p>Some good answers:</p>
+<ul>
+<li>It’s important to know how your work can be used when you put it out there</li>
+<li>It’s important to know how you can use other people’s work in your own research</li>
+<li>It’s VERY important to know what your rights are should someone use your work in a way you did not intend (or if someone tries to take credit for your work)</li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -791,15 +847,16 @@
 <li>Grab some ☕️ and 🍩</li>
 <li>Dr.&nbsp;Kyle Johnsen on collaborative exercises around reproducible research practices</li>
 </ul>
-</section>
+
+<img data-src="assets/qr_postworkshop_survey.png" class="r-stretch"></section>
 <section id="resources" class="slide level2">
 <h2>Resources</h2>
 <div class="r-fit-text">
 <ol type="1">
-<li><a href="https://book.the-turing-way.org/">The Turing Way</a></li>
+<li>Open Science Alliance (OSA) <a href="https://openscialliance.github.io/">website</a>, <a href="https://github.com/openscialliance/">GitHub organization</a>, and <a href="https://github.com/openscialliance/data-donuts-apr2024">repository for this workshop</a></li>
 <li><a href="https://github.com/the-turing-way/reproducible-project-template">Reproducible Project Template</a></li>
 <li><a href="https://github.com/cookiecutter/cookiecutter">Cookiecutter Template</a></li>
-<li>Open Science Alliance (OSA) <a href="https://openscialliance.github.io/">website</a>, <a href="https://github.com/openscialliance/">GitHub organization</a>, and <a href="https://github.com/openscialliance/data-donuts-apr2024">repository for this workshop</a></li>
+<li><a href="https://book.the-turing-way.org/">The Turing Way</a></li>
 <li><a href="https://osf.io/">Open Science Foundation</a> (OSF)</li>
 <li><a href="https://www.cos.io/">Center for Open Science (COS)</a></li>
 <li><a href="https://choosealicense.com/">Choose a License</a> workflow</li>
