@@ -527,28 +527,73 @@
 </section>
 <section id="create-an-account-on-github" class="slide level2">
 <h2>Create an account on GitHub</h2>
-</section>
+
+<img data-src="assets/github-signup.png" class="r-stretch"></section>
 <section id="create-a-repo" class="slide level2">
 <h2>Create a repo</h2>
+
+<img data-src="assets/create-repo.png" class="r-stretch"></section>
+<section id="create-a-repo-1" class="slide level2">
+<h2>Create a repo</h2>
+<p>Fill out the form information.</p>
+<div class="r-fit-text">
+<ul>
+<li class="fragment"><strong>Repo name</strong>: Something pithy that describes the project you’re working on.</li>
+<li class="fragment"><strong>Description</strong>: A one-line summary of what you’re using this repo for.</li>
+<li class="fragment"><strong>Public / Private</strong>: Suggest “public” by default, but “private” during development and “public” during and after review also makes sense.</li>
+<li class="fragment"><strong>Add a README</strong>: This is where you’ll go into detail about what your repo is doing. Definitely add this!</li>
+<li class="fragment"><strong>Add .gitignore</strong>: A bit more technical; depends on the work you’re doing.</li>
+<li class="fragment"><strong>Choose a license</strong>: Absolutely yes–we’ll go into more detail in the next section.</li>
+</ul>
+</div>
 </section>
 <section id="create-a-folder-structure" class="slide level2">
 <h2>Create a folder structure</h2>
+<div class="column" style="width:50%;">
+<p><img data-src="assets/repo-structure.png"></p>
+</div>
+<div class="column" style="width:48%;">
+<ul>
+<li class="fragment">This is a <strong>suggestion</strong>!</li>
+<li class="fragment">Use what is relevant, ignore what is not</li>
+<li class="fragment">(PSO: Don’t put full data in version control. Sample data is great! Or, add <code>data/</code> to <code>.gitignore</code>)</li>
+</ul>
+</div>
+<aside class="notes">
+<ul>
+<li>Items like a license, README, and <code>src</code> are must-haves.</li>
+<li><code>docs</code>, <code>notebooks</code>, <code>models</code>, and <code>data</code> (for sample data, perhaps) are great-to-haves.</li>
+<li>For public-facing repos that are grown and maintained in the open, a Code of Conduct and Contributors documents are must-haves.</li>
+<li>What else can you think of?</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="add-everything-to-version-control" class="slide level2">
 <h2>Add everything to version control</h2>
-</section>
+
+<img data-src="assets/upload-to-github.png" class="r-stretch"></section>
 <section id="version-control-workflow" class="slide level2">
 <h2>Version control workflow</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="assets/main-branch.png"></p>
-<figcaption>One branch. DOI: 10.5281/zenodo.3332807.</figcaption>
+<figcaption>One branch. <a href="https://doi.org/10.5281/zenodo.3332807">DOI</a>.</figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="assets/sub-branch.png"></p>
-<figcaption>Many branches. DOI: 10.5281/zenodo.3332807.</figcaption>
+<figcaption>Many branches. <a href="https://doi.org/10.5281/zenodo.3332807">DOI</a>.</figcaption>
 </figure>
 </div>
 </section>
@@ -572,13 +617,27 @@
 </section>
 <section id="patents-trademarks-and-copyright" class="slide level2">
 <h2>Patents, Trademarks, and Copyright</h2>
+<p>Multiple kinds of intellectual property protection.</p>
+<p>Here, we’re focusing on <strong>Copyright</strong>.</p>
+<p>Copyright can cover usage rights for:</p>
+<ul>
+<li>Code</li>
+<li>Data</li>
+<li>Hardware</li>
+<li>ML models</li>
+<li>Content (slides, books, pictures, figures…)</li>
+</ul>
 </section>
 <section id="choosing-a-license" class="slide level2">
 <h2>Choosing a license</h2>
-<p>https://choosealicense.com/</p>
+<p>How does one pick a license?</p>
+
+<img data-src="assets/license-table.png" class="r-stretch"><p>Fortunately, there’s a handy flowchart!</p>
+<p><a href="https://choosealicense.com/">https://choosealicense.com/</a></p>
 </section>
 <section id="adding-a-license-file-to-your-repo" class="slide level2">
 <h2>Adding a license file to your repo</h2>
+<p>You can do this right when you create the repo!</p>
 </section>
 <section id="environments" class="slide level2">
 <h2>🌅 Environments</h2>
@@ -607,7 +666,7 @@
 <section id="how-to-capture-an-environment" class="slide level2">
 <h2>How to “capture” an environment</h2>
 
-<img data-src="assets/computational-environments.png" class="r-stretch quarto-figure-center"><p class="caption">Computational environments. DOI: 10.5281/zenodo.3332807.</p><div>
+<img data-src="assets/computational-environments.png" class="r-stretch quarto-figure-center"><p class="caption">Computational environments. <a href="https://doi.org/10.5281/zenodo.3332807">DOI</a>.</p><div>
 <ol type="1">
 <li class="fragment">Virtual machines</li>
 <li class="fragment">Docker / containers</li>
@@ -637,26 +696,122 @@
 <section id="virtual-machines" class="slide level2">
 <h2>Virtual machines</h2>
 <p>VirtualBox or Vagrant</p>
+<aside class="notes">
+<p>Pros/cons?</p>
+<p>Has anyone ever done this before?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="containers" class="slide level2">
 <h2>Containers</h2>
-<p>Docker Dockerfiles Sharing images with DockerHub</p>
+
+<img data-src="assets/docker.png" class="r-stretch"><p>Containers are often pitched as “lightweight VMs”</p>
+<p>Build on millions of pre-built containers at <a href="https://hub.docker.com/">DockerHub</a>, or build your own from scratch via <a href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/">Dockerfiles</a>.</p>
+<aside class="notes">
+<p>“Lightweight VM” is not really technically accurate, but in practice it’s reasonable.</p>
+<p>Pros/cons?</p>
+<p>Has anyone ever used containers before?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="package-management-systems" class="slide level2">
 <h2>Package management systems</h2>
-<p>Conda / mamba</p>
-<p>Using YAML to specify the environments</p>
+
+<img data-src="assets/mamba.png" class="r-stretch"><p><a href="https://docs.conda.io/en/latest/">Conda</a> and <a href="https://mamba.readthedocs.io/en/latest/">Mamba</a> are most well known on the Python end</p>
+<p>Use YAML to specify the environments</p>
+<aside class="notes">
+<p>Pros/cons?</p>
+<p>Has anyone ever used conda or mamba before?</p>
+<p>Are there other package management systems folks have used?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="binder" class="slide level2">
 <h2>Binder</h2>
-<p>Binder and BinderHub</p>
-<p>Creating a repo to use in Binder</p>
+
+<img data-src="assets/binder.png" class="r-stretch"><p>Converts a public repository into an active notebook environment, all via the web</p>
+<p>Just specify the environment, and Binder does the rest!</p>
+<aside class="notes">
+<p>Has anyone ever used Binder before?</p>
+<p>Binder makes use of everything: - it’s running in cloud infrastructure (VMs) - uses your environment specification (package management, YAML) to create the environment - spins up everything inside a custom-built Docker container</p>
+<p>One major downside: it’s very, very resource-intensive - while every effort is made to streamline image building–it watches for changes in repos, and only builds from that point–it’s a very compute intensive process - we tested a BinderHub pilot locally at UGA, and decided we just didn’t have the resources or the demand to justify it, not when mybinder.org still exists - a lot of universities ARE spinning up their own internal BinderHubs; if we need it, let us know!</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="so-much-more" class="slide level2">
 <h2>So much more</h2>
-<p>Continuous integration, code testing, open access, study preregistration</p>
-<p>Links where you can learn more</p>
-<p>For now: research data management!</p>
+<p>Continuous integration, code testing, open access, study preregistration.</p>
+<p>Links where you can learn more at the end of the slides.</p>
+</section>
+<section id="thank-you" class="slide level2">
+<h2>Thank you!</h2>
+<p>Any questions?</p>
+<p>Take this survey before leaving today!</p>
+
+<img data-src="assets/qr_postworkshop_survey.png" class="r-stretch"></section>
+<section id="next-up" class="slide level2">
+<h2>Next up</h2>
+<ul>
+<li>Grab some ☕️ and 🍩</li>
+<li>Dr.&nbsp;Kyle Johnsen on collaborative exercises around reproducible research practices</li>
+</ul>
+</section>
+<section id="resources" class="slide level2">
+<h2>Resources</h2>
+<div class="r-fit-text">
+<ol type="1">
+<li><a href="https://book.the-turing-way.org/">The Turing Way</a></li>
+<li><a href="https://github.com/the-turing-way/reproducible-project-template">Reproducible Project Template</a></li>
+<li><a href="https://github.com/cookiecutter/cookiecutter">Cookiecutter Template</a></li>
+<li>Open Science Alliance (OSA) <a href="https://openscialliance.github.io/">website</a>, <a href="https://github.com/openscialliance/">GitHub organization</a>, and <a href="https://github.com/openscialliance/data-donuts-apr2024">repository for this workshop</a></li>
+<li><a href="https://osf.io/">Open Science Foundation</a> (OSF)</li>
+<li><a href="https://www.cos.io/">Center for Open Science (COS)</a></li>
+<li><a href="https://choosealicense.com/">Choose a License</a> workflow</li>
+<li><a href="https://joss.theoj.org/">Journal of Open Source Software (JOSS)</a></li>
+<li><a href="https://jose.theoj.org/">Journal of Open Source Education (JOSE)</a></li>
+<li><a href="https://zenodo.org/">Zenodo</a></li>
+<li><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git cheat sheet</a></li>
+<li><a href="https://skills.github.com/">Interactive GitHub tutorials</a></li>
+<li><a href="https://mybinder.org/">myBinder</a> and <a href="https://binderhub.readthedocs.io/en/latest/">BinderHub</a></li>
+<li><a href="https://docs.conda.io/en/latest/">Conda</a> and <a href="https://mamba.readthedocs.io/en/latest/">Mamba</a></li>
+</ol>
+</div>
 <div class="quarto-auto-generated-content">
 <p><img src="logo/color.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
@@ -950,6 +1105,24 @@
         // clear code selection
         e.clearSelection();
       });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -986,7 +1159,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

@@ -153,17 +153,53 @@ Some good answers:
 
 ## Create an account on GitHub
 
+![](assets/github-signup.png)
+
 ## Create a repo
+
+![](assets/create-repo.png)
+
+## Create a repo
+
+Fill out the form information.
+
+::: {.incremental .r-fit-text}
+ - **Repo name**: Something pithy that describes the project you're working on.
+ - **Description**: A one-line summary of what you're using this repo for.
+ - **Public / Private**: Suggest "public"  by default, but "private" during development and "public" during and after review also makes sense.
+ - **Add a README**: This is where you'll go into detail about what your repo is doing. Definitely add this!
+ - **Add .gitignore**: A bit more technical; depends on the work you're doing.
+ - **Choose a license**: Absolutely yes--we'll go into more detail in the next section.
+:::
 
 ## Create a folder structure
 
+::: {.column width="50%"}
+![](assets/repo-structure.png)
+:::
+
+::: {.column width="48%" .incremental}
+ - This is a **suggestion**!
+ - Use what is relevant, ignore what is not
+ - (PSO: Don't put full data in version control. Sample data is great! Or, add `data/` to `.gitignore`)
+:::
+
+::: {.notes}
+ - Items like a license, README, and `src` are must-haves.
+ - `docs`, `notebooks`, `models`, and `data` (for sample data, perhaps) are great-to-haves.
+ - For public-facing repos that are grown and maintained in the open, a Code of Conduct and Contributors documents are must-haves.
+ - What else can you think of? 
+:::
+
 ## Add everything to version control
+
+![](assets/upload-to-github.png)
 
 ## Version control workflow
 
-![One branch. DOI: 10.5281/zenodo.3332807.](assets/main-branch.png)
+![One branch. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/main-branch.png)
 
-![Many branches. DOI: 10.5281/zenodo.3332807.](assets/sub-branch.png)
+![Many branches. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/sub-branch.png)
 
 ## 🪪 Licensing
 
@@ -180,11 +216,31 @@ Some good answers:
 
 ## Patents, Trademarks, and Copyright
 
+Multiple kinds of intellectual property protection.
+
+Here, we're focusing on **Copyright**.
+
+Copyright can cover usage rights for:
+
+ - Code
+ - Data
+ - Hardware
+ - ML models
+ - Content (slides, books, pictures, figures...)
+
 ## Choosing a license
 
-https://choosealicense.com/
+How does one pick a license?
+
+![](assets/license-table.png)
+
+Fortunately, there's a handy flowchart!
+
+[https://choosealicense.com/](https://choosealicense.com/)
 
 ## Adding a license file to your repo
+
+You can do this right when you create the repo!
 
 ## 🌅 Environments
 
@@ -203,7 +259,7 @@ Some good answers:
 
 ## How to "capture" an environment
 
-![Computational environments. DOI: 10.5281/zenodo.3332807.](assets/computational-environments.png)
+![Computational environments. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/computational-environments.png)
 
 ::: {.incremental}
 1. Virtual machines
@@ -223,30 +279,100 @@ Some good answers:
 
 VirtualBox or Vagrant
 
+::: {.notes}
+Pros/cons?
+
+Has anyone ever done this before?
+:::
+
 ## Containers
 
-Docker
-Dockerfiles
-Sharing images with DockerHub
+![](assets/docker.png)
+
+Containers are often pitched as "lightweight VMs"
+
+Build on millions of pre-built containers at [DockerHub](https://hub.docker.com/), or build your own from scratch via [Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
+
+::: {.notes}
+"Lightweight VM" is not really technically accurate, but in practice it's reasonable.
+
+Pros/cons?
+
+Has anyone ever used containers before?
+:::
 
 ## Package management systems
 
-Conda / mamba
+![](assets/mamba.png)
 
-Using YAML to specify the environments
+[Conda](https://docs.conda.io/en/latest/) and [Mamba](https://mamba.readthedocs.io/en/latest/) are most well known on the Python end
+
+Use YAML to specify the environments
+
+::: {.notes}
+Pros/cons?
+
+Has anyone ever used conda or mamba before?
+
+Are there other package management systems folks have used?
+:::
 
 ## Binder
 
-Binder and BinderHub
+![](assets/binder.png)
 
-Creating a repo to use in Binder
+Converts a public repository into an active notebook environment, all via the web
+
+Just specify the environment, and Binder does the rest!
+
+::: {.notes}
+Has anyone ever used Binder before?
+
+Binder makes use of everything:
+ - it's running in cloud infrastructure (VMs)
+ - uses your environment specification (package management, YAML) to create the environment
+ - spins up everything inside a custom-built Docker container
+
+One major downside: it's very, very resource-intensive
+ - while every effort is made to streamline image building--it watches for changes in repos, and only builds from that point--it's a very compute intensive process
+ - we tested a BinderHub pilot locally at UGA, and decided we just didn't have the resources or the demand to justify it, not when mybinder.org still exists
+ - a lot of universities ARE spinning up their own internal BinderHubs; if we need it, let us know!
+:::
 
 ## So much more
 
-Continuous integration, code testing, open access, study preregistration
+Continuous integration, code testing, open access, study preregistration.
 
-Links where you can learn more
+Links where you can learn more at the end of the slides.
 
-For now: research data management!
+## Thank you!
 
+Any questions?
 
+Take this survey before leaving today!
+
+![](assets/qr_postworkshop_survey.png)
+
+## Next up
+
+ - Grab some ☕️ and 🍩
+ - Dr. Kyle Johnsen on collaborative exercises around reproducible research practices
+
+## Resources
+
+::: {.r-fit-text}
+1. [The Turing Way](https://book.the-turing-way.org/)
+2. [Reproducible Project Template](https://github.com/the-turing-way/reproducible-project-template)
+3. [Cookiecutter Template](https://github.com/cookiecutter/cookiecutter)
+4. Open Science Alliance (OSA) [website](https://openscialliance.github.io/), [GitHub organization](https://github.com/openscialliance/), and [repository for this workshop](https://github.com/openscialliance/data-donuts-apr2024)
+5. [Open Science Foundation](https://osf.io/) (OSF)
+6. [Center for Open Science (COS)](https://www.cos.io/)
+7. [Choose a License](https://choosealicense.com/) workflow
+8. [Journal of Open Source Software (JOSS)](https://joss.theoj.org/)
+9. [Journal of Open Source Education (JOSE)](https://jose.theoj.org/)
+10. [Zenodo](https://zenodo.org/)
+11. [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+12. [Interactive GitHub tutorials](https://skills.github.com/)
+13. [myBinder](https://mybinder.org/) and [BinderHub](https://binderhub.readthedocs.io/en/latest/)
+14. [Conda](https://docs.conda.io/en/latest/) and [Mamba](https://mamba.readthedocs.io/en/latest/)
+:::
