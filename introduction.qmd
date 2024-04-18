@@ -1,0 +1,42 @@
+---
+title: "Data & Donuts"
+subtitle: "Open Science that's 'Good Enough'"
+date: Friday, April 19, 2024
+format:
+    revealjs:
+        theme: simple
+        slide-number: true
+        logo: logo/color.jpg
+        footer: <https://openscialliance.github.io/>
+---
+
+## Today's Presenters
+
+#### Prof. Shannon Quinn
+School of Computing
+
+#### Prof. Kyle Johnsen
+Engineering
+
+#### Dr. Katherine Ireland
+Research and Computational Data Management
+
+#### Dr. Camila Lívio
+Research and Computational Data Management
+
+## Today's Schedule (tentative)
+
+ - 8:15: Registration ☕️ 🍩
+ - 8:30: Welcome & Introduction **<-- You are here**
+ - 8:45: Basics of Reproducible Research (Shannon)
+ - 9:45: BREAK ☕️ 🍩
+ - 9:55: BYO Project Walkthrough (Kyle)
+ - 10:40: BREAK ☕️ 🍩
+ - 10:45: Data Management (Katherine, Camila)
+ - 11:20: Wrap up
+
+## What is Open Science?
+
+Open Science is the movement to make all scientific data, methods, and materials accessible to all levels of society.
+
+![](assets/openscience1.jpg)
