@@ -13,11 +13,11 @@ format:
 
 What?
 
-![_The Turing Way_ project illustration by Scriberia. DOI: 10.5281/zenodo.3332807.](assets/research-cycle.svg)
+![_The Turing Way_ project illustration by Scriberia. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/research-cycle.svg)
 
 ## Different kinds of "reproducible"
 
-![Definitions of reproducible research. DOI: 10.5281/zenodo.3332807.](assets/reproducible-matrix.jpg)
+![[DOI](https://doi.org/10.5281/zenodo.3332807).](assets/reproducible-matrix.jpg)
 
 Today, we're focused on "Reproducible"
 
@@ -48,19 +48,27 @@ Some good answers:
 Yes, efficiency! There's admittedly a start-up cost in adopting these strategies, but time-saving across the board when we're confident our work is reproducible.
 :::
 
-## Goal: Make Research Reproducible
+## Goal: Make Research Reproducible {auto-animate="true"}
 
 How?
-
-Lots of ways!
 
 ::: {.notes}
 TONS of ways to make your work reproducible. Today we'll only cover a few.
 :::
 
-## Barriers to Reproducibility
+## Goal: Make Research Reproducible {auto-animate="true"}
 
-If reproducibility is so great, why are we here in 2024 learning about it?
+How?
+
+**Lots of ways!**
+
+::: {.notes}
+Hopefully got a few ideas from the introduction slides about Open Science. Are there other ideas?
+:::
+
+## Barriers to Reproducibility {auto-animate="true"}
+
+If reproducibility is such a great thing to ensure in research, why are we here in 2024 learning about it (possibly for the first time)?
 
 ::: {.notes}
 Again, take a poll. Some good answers:
@@ -72,18 +80,26 @@ Again, take a poll. Some good answers:
  - personal: people might discover I'm wrong
 :::
 
+## Barriers to Reproducibility {auto-animate="true"}
+
+If reproducibility is such a great thing to ensure in research, why are we here in 2024 learning about it (possibly for the first time)?
+
+![A slide outlining some of the barriers to reproducible research from Kirstie Whitaker’s [talk about The Turing Way](https://youtu.be/wZeoZaIV0VE?t=312) at [csv,conf,v4](https://csvconf.com/2019) in May 2019. [DOI](https://doi.org/10.5281/zenodo.2669547)](assets/barriers-reproducibility.png)
+
 ## Reproducibility is hard
 
-Fortunately, reproducibility is not "all-or-nothing"; even _some_ elements are better than none!
+Fortunately, reproducibility is not "all-or-nothing."
+
+Even _some_ reproducibility is better than none!
 
 **Today, let's focus on "good enough": the least amount of work to get a respectably reproducible research project.**
 
-## What we'll cover today
+## What we'll cover
 
 ::: {.incremental}
-1. Version control
-2. Licensing
-3. Environments
+1. 🔁 Version control
+2. 🪪 Licensing
+3. 🌅 Environments
 :::
 
 ::: {.notes}
@@ -100,7 +116,7 @@ Environments:
  - Introduction to BinderHub
 :::
 
-## Step 1: Version Control
+## 🔁 Version Control
 
 Version control is a workflow where the entire history of a set of documents is preserved.
 
@@ -149,7 +165,7 @@ Some good answers:
 
 ![Many branches. DOI: 10.5281/zenodo.3332807.](assets/sub-branch.png)
 
-## Step 2: Licensing
+## 🪪 Licensing
 
 Licensing is how to spell out the rights of others to use, modify, or build on our work.
 
@@ -170,7 +186,7 @@ https://choosealicense.com/
 
 ## Adding a license file to your repo
 
-## Step 3: Environments
+## 🌅 Environments
 
 Making your environment reproducible means configuring your work space--code, software, programs, even operating system--so that it is identical to the environment in which the research was originally done.
 
