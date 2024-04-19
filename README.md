@@ -12,7 +12,7 @@ Welcome! These slides were built using [Quarto](https://quarto.org/). The easies
 
 Slides as presented, in order:
 
- - [Part 1: Introduction](introduction.html) (presented by Shannon Quinn and Kyle Johnsen)
- - [Part 2: Getting Started with Reproducible Research](reproducible-research.html) (presented by Shannon Quinn)
- - [Part 3: Build your own Project](byop.html) (presented by Kyle Johnsen)
+ - [Part 1: Introduction](https://openscialliance.github.io/data-donuts-apr2024/introduction.html) (presented by Shannon Quinn and Kyle Johnsen)
+ - [Part 2: Getting Started with Reproducible Research](https://openscialliance.github.io/data-donuts-apr2024/reproducible-research.html) (presented by Shannon Quinn)
+ - [Part 3: Build your own Project](https://openscialliance.github.io/data-donuts-apr2024/byop.html) (presented by Kyle Johnsen)
  - Part 4: Data Management and Reproducibility (presented by Katherine Ireland and Camila Lívio)
