@@ -1,0 +1,125 @@
+---
+title: "Bring your own project (and problems) session"
+date: Friday, April 19, 2024
+format:
+    revealjs:
+        theme: simple
+        slide-number: true
+        logo: logo/color.jpg
+        footer: <https://openscialliance.github.io/>
+        min-scale: .2
+        max-scale: 1
+        width: 1920
+        height: 1080
+---
+
+## This session
+
+### Objectives
+- Take a few moments to reflect on our own current or intended practices with data
+- Identify opportunities and challenges, especially with respect to reproducibility
+
+### Process
+- Form discussion groups. 
+- Take notes via the [HackMD](https://hackmd.io) collaborative notebook (links coming)  
+- Very helpful if a few people take the notes and other's contribute to the discussion
+    - Rotate this responsibility
+    - Please take care to listen and be respectful of everyone's opinions
+- Notes will be shared via the workshop GitHub repository
+
+## Time to form groups!
+- Aim for 5-7 people per group
+- Better if you are not in the same research group
+- Introduce yourselves (briefly, we'll start in 2 minutes)
+
+## 1. Data Acquisition
+:::: {.columns}
+
+::: {.column width="60%"}
+1. **Data and Meta Data**
+    - What types/forms of data do you each work with?  Write as many of these down as you can in a list. (e.g., photos)
+    - What would be useful to know about how each of these types of data were collected? (think: Camera brand, field of view) 
+    
+2. **How can we balance the ideals of data collection with the practical challenges and constraints often faced in real-world research settings?**
+    - List some data or data collection practices that you think you (or others) could document better and would be of high value
+    - What form would that documentation take? 
+
+:::
+
+::: {.column width="40%"}
+![](assets/hackmd1.png){fig-align="center" width="70%"}
+
+[https://hackmd.io/@kjjohnsen/rJx96rkZR/edit](https://hackmd.io/@kjjohnsen/rJx96rkZR/edit)
+::: 
+
+::::
+
+## 2. Raw Data Storage and Organization
+:::: {.columns}
+
+::: {.column width="60%"}
+1. **Storage**
+    - Where do you tend to store raw data you've collected? (e.g., personal computer hard disk)
+    - What are some of the challenges you face when storing your raw data? (e.g., limited capacity)
+    
+2. **Organization**
+    - How do you tend to organize raw data as you are collecting it (or after you collect it), and where did that organizational practice come from?
+    - What are some issues that an organizational strategy has addressed or causes for you (or others)? 
+
+:::
+
+::: {.column width="40%"}
+![](assets/hackmd2.png){fig-align="center" width="70%"}
+
+[https://hackmd.io/@kjjohnsen/rJVi_wJ-C/edit](https://hackmd.io/@kjjohnsen/rJVi_wJ-C/edit)
+::: 
+
+::::
+
+
+## 3. Data Analysis
+
+:::: {.columns}
+
+::: {.column width="60%"}
+1. **Data Cleaning and Transformation**
+    - What does it mean to you to "clean" data, and where do you put this data?
+    - How do you incorporate and document manual steps? 
+    
+2. **Analyses**
+    - What are some challenges you've faced, or foresee facing, when it comes to documenting how you've analyzed data?  
+    - To what extent does a tool, such as Git and GitHub, address these challenges? 
+    - What are some pros/cons of sharing your analysis code?
+
+:::
+
+::: {.column width="40%"}
+![](assets/hackmd3.png){fig-align="center" width="70%"}
+
+[https://hackmd.io/@kjjohnsen/SJKcLdk-0/edit](https://hackmd.io/@kjjohnsen/SJKcLdk-0/edit)
+::: 
+
+::::
+
+## 4. Data Archival and Sharing 
+
+:::: {.columns}
+
+::: {.column width="60%"}
+1. **Motivations**
+    - What motivates you to share archival data with others?
+    - What are the challenges you might face when attempting to share archival data?
+    
+2. **Strategy**
+    - How do you, or would you, go about sharing a dataset?  What are some good methods you've used or seen used?
+    - What are the merits and drawbacks of institutional support for data archival and sharing?
+
+:::
+
+::: {.column width="40%"}
+![](assets/hackmd4.png){fig-align="center" width="70%"}
+
+[https://hackmd.io/@kjjohnsen/ByBiOu1-C/edit](https://hackmd.io/@kjjohnsen/ByBiOu1-C/edit)
+::: 
+
+::::
