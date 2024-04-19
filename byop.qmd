@@ -123,3 +123,12 @@ format:
 ::: 
 
 ::::
+
+## Next up
+
+- Grab some ☕️ and 🍩
+- Research and Computational Data Management with Dr. Katherine Ireland and Dr. Camila Lívio
+
+Please fill out the post workshop survey! 
+
+![](assets/qr_postworkshop_survey.png){width="450"}
