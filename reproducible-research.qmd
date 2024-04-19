@@ -13,11 +13,15 @@ format:
 
 What?
 
-![_The Turing Way_ project illustration by Scriberia. DOI: 10.5281/zenodo.3332807.](assets/research-cycle.svg)
+![_The Turing Way_ project illustration by Scriberia. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/research-cycle.svg)
+
+::: {.notes}
+What is reproducible reesearch? 
+:::
 
 ## Different kinds of "reproducible"
 
-![Definitions of reproducible research. DOI: 10.5281/zenodo.3332807.](assets/reproducible-matrix.jpg)
+![[DOI](https://doi.org/10.5281/zenodo.3332807).](assets/reproducible-matrix.jpg)
 
 Today, we're focused on "Reproducible"
 
@@ -33,6 +37,7 @@ Why?
 Take a poll on the "why"!
 
 Some good answers:
+
  - Scientific evidence is strengthened if it can be replicated by others ("standing on the shoulders of giants")
  - Builds trust in the community
  - Gives researchers a "head start" on new investigations
@@ -48,19 +53,27 @@ Some good answers:
 Yes, efficiency! There's admittedly a start-up cost in adopting these strategies, but time-saving across the board when we're confident our work is reproducible.
 :::
 
-## Goal: Make Research Reproducible
+## Goal: Make Research Reproducible {auto-animate="true"}
 
 How?
-
-Lots of ways!
 
 ::: {.notes}
 TONS of ways to make your work reproducible. Today we'll only cover a few.
 :::
 
-## Barriers to Reproducibility
+## Goal: Make Research Reproducible {auto-animate="true"}
 
-If reproducibility is so great, why are we here in 2024 learning about it?
+How?
+
+**Lots of ways!**
+
+::: {.notes}
+Hopefully got a few ideas from the introduction slides about Open Science. Are there other ideas?
+:::
+
+## Barriers to Reproducibility {auto-animate="true"}
+
+If reproducibility is such a great thing to ensure in research, why are we here in 2024 learning about it (possibly for the first time)?
 
 ::: {.notes}
 Again, take a poll. Some good answers:
@@ -72,35 +85,46 @@ Again, take a poll. Some good answers:
  - personal: people might discover I'm wrong
 :::
 
+## Barriers to Reproducibility {auto-animate="true"}
+
+If reproducibility is such a great thing to ensure in research, why are we here in 2024 learning about it (possibly for the first time)?
+
+![A slide outlining some of the barriers to reproducible research from Kirstie Whitaker’s [talk about The Turing Way](https://youtu.be/wZeoZaIV0VE?t=312) at [csv,conf,v4](https://csvconf.com/2019) in May 2019. [DOI](https://doi.org/10.5281/zenodo.2669547)](assets/barriers-reproducibility.png)
+
 ## Reproducibility is hard
 
-Fortunately, reproducibility is not "all-or-nothing"; even _some_ elements are better than none!
+Fortunately, reproducibility is not "all-or-nothing."
+
+Even _some_ reproducibility is better than none!
 
 **Today, let's focus on "good enough": the least amount of work to get a respectably reproducible research project.**
 
-## What we'll cover today
+## What we'll cover
 
 ::: {.incremental}
-1. Version control
-2. Licensing
-3. Environments
+1. 🔁 Version control
+2. 🪪 Licensing
+3. 🌅 Environments
 :::
 
 ::: {.notes}
 Versioning:
+
  - No command line git or coding; just a web interface and some filesystem munging (like creating folders)
  - We'll set up a repo on GitHub and I'll demonstrate a sample project folder structure for organizing your reproducible research project
 
 Licensing:
+
  - I know it sounds boring but if you anticipate anyone other than yourself using, adding to, modifying, or otherwise touching your work, you need a license.
 
 Environments:
+
  - Probably the single most difficult part of making research reproducible
  - A little bit about environment management
  - Introduction to BinderHub
 :::
 
-## Step 1: Version Control
+## 🔁 Version Control
 
 Version control is a workflow where the entire history of a set of documents is preserved.
 
@@ -109,6 +133,7 @@ Version control is a workflow where the entire history of a set of documents is 
 ::: {.notes}
 
 Some good answers:
+
  - You can see everything added, removed, and changed at any point
  - You can review changes before they are made "official"
  - You can revert back to a previous version
@@ -118,7 +143,7 @@ Some good answers:
 
 ## Why version control
 
-![Tracking project history. DOI: 10.5281/zenodo.3332807.](assets/project-history.svg)
+![Tracking project history. [DOI](https://doi.org/10.5281/zenodo.2669547).](assets/project-history.svg)
 
 ::: {.incremental}
 
@@ -129,6 +154,7 @@ Some good answers:
 :::
 
 ::: {.notes}
+
 - Provenance is the full history of something. This can be useful for many reasons, but one is so that invariable version changes in the underlying software or its dependencies can be understood so we know how e.g. a figure was generated, by looking at the history.
 - Version history gives an auditable trail for why certain changes were made.
 - Anyone have giant commented-out blocks of code? You can delete it now, safe in the knowledge that it still exists in the history you're recording through version control. If you need that code again, just go back to the version where it existed.
@@ -137,19 +163,61 @@ Some good answers:
 
 ## Create an account on GitHub
 
+![](assets/github-signup.png)
+
 ## Create a repo
+
+![](assets/create-repo.png)
+
+## Create a repo
+
+Fill out the form information.
+
+::: {.incremental .r-fit-text}
+ - **Repo name**: Something pithy that describes the project you're working on.
+ - **Description**: A one-line summary of what you're using this repo for.
+ - **Public / Private**: Suggest "public"  by default, but "private" during development and "public" during and after review also makes sense.
+ - **Add a README**: This is where you'll go into detail about what your repo is doing. Definitely add this!
+ - **Add .gitignore**: A bit more technical; depends on the work you're doing.
+ - **Choose a license**: Absolutely yes--we'll go into more detail in the next section.
+:::
 
 ## Create a folder structure
 
+::: {.column width="50%"}
+![](assets/repo-structure.png)
+:::
+
+::: {.column width="48%" .incremental}
+ - This is a **suggestion**!
+ - Use what is relevant, ignore what is not
+ - (PSO: Don't put full data in version control. Sample data is great! Or, add `data/` to `.gitignore`)
+:::
+
+::: {.notes}
+ - Items like a license, README, and `src` are must-haves.
+ - `docs`, `notebooks`, `models`, and `data` (for sample data, perhaps) are great-to-haves.
+ - For public-facing repos that are grown and maintained in the open, a Code of Conduct and Contributors documents are must-haves.
+ - What else can you think of? 
+:::
+
 ## Add everything to version control
+
+![](assets/upload-to-github.png)
 
 ## Version control workflow
 
-![One branch. DOI: 10.5281/zenodo.3332807.](assets/main-branch.png)
+![One branch. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/main-branch.png)
 
-![Many branches. DOI: 10.5281/zenodo.3332807.](assets/sub-branch.png)
+![Many branches. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/sub-branch.png)
 
-## Step 2: Licensing
+::: {.notes}
+I won't go over the technical details of version control here, but suffice to say it can look like either one of these workflows. Each node is a checkpoint, and the connections between them indicate changes from that checkpoint.
+
+Your "trees" can get quite complicated, depending on the size of the project and the number of collaborators! But it helps at least discretize the contributions, make the working spaces concrete, and prevent the buildup of FINALFINALFINAL documents being emailed.
+:::
+
+## 🪪 Licensing
 
 Licensing is how to spell out the rights of others to use, modify, or build on our work.
 
@@ -157,6 +225,7 @@ Licensing is how to spell out the rights of others to use, modify, or build on o
 
 ::: {.notes}
 Some good answers:
+
 - It's important to know how your work can be used when you put it out there
 - It's important to know how you can use other people's work in your own research
 - It's VERY important to know what your rights are should someone use your work in a way you did not intend (or if someone tries to take credit for your work)
@@ -164,13 +233,33 @@ Some good answers:
 
 ## Patents, Trademarks, and Copyright
 
+Multiple kinds of intellectual property protection.
+
+Here, we're focusing on **Copyright**.
+
+Copyright can cover usage rights for:
+
+ - Code
+ - Data
+ - Hardware
+ - ML models
+ - Content (slides, books, pictures, figures...)
+
 ## Choosing a license
 
-https://choosealicense.com/
+How does one pick a license?
+
+![](assets/license-table.png)
+
+Fortunately, there's a handy flowchart!
+
+[https://choosealicense.com/](https://choosealicense.com/)
 
 ## Adding a license file to your repo
 
-## Step 3: Environments
+You can do this right when you create the repo!
+
+## 🌅 Environments
 
 Making your environment reproducible means configuring your work space--code, software, programs, even operating system--so that it is identical to the environment in which the research was originally done.
 
@@ -187,7 +276,7 @@ Some good answers:
 
 ## How to "capture" an environment
 
-![Computational environments. DOI: 10.5281/zenodo.3332807.](assets/computational-environments.png)
+![Computational environments. [DOI](https://doi.org/10.5281/zenodo.3332807).](assets/computational-environments.png)
 
 ::: {.incremental}
 1. Virtual machines
@@ -207,30 +296,102 @@ Some good answers:
 
 VirtualBox or Vagrant
 
+::: {.notes}
+Pros/cons?
+
+Has anyone ever done this before?
+:::
+
 ## Containers
 
-Docker
-Dockerfiles
-Sharing images with DockerHub
+![](assets/docker.png)
+
+Containers are often pitched as "lightweight VMs"
+
+Build on millions of pre-built containers at [DockerHub](https://hub.docker.com/), or build your own from scratch via [Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/).
+
+::: {.notes}
+"Lightweight VM" is not really technically accurate, but in practice it's reasonable.
+
+Pros/cons?
+
+Has anyone ever used containers before?
+:::
 
 ## Package management systems
 
-Conda / mamba
+![](assets/mamba.png)
 
-Using YAML to specify the environments
+[Conda](https://docs.conda.io/en/latest/) and [Mamba](https://mamba.readthedocs.io/en/latest/) are most well known on the Python end
+
+Use YAML to specify the environments
+
+::: {.notes}
+Pros/cons?
+
+Has anyone ever used conda or mamba before?
+
+Are there other package management systems folks have used?
+:::
 
 ## Binder
 
-Binder and BinderHub
+![](assets/binder.png)
 
-Creating a repo to use in Binder
+Converts a public repository into an active notebook environment, all via the web
+
+Just specify the environment, and Binder does the rest!
+
+::: {.notes}
+Has anyone ever used Binder before?
+
+Binder makes use of everything:
+ - it's running in cloud infrastructure (VMs)
+ - uses your environment specification (package management, YAML) to create the environment
+ - spins up everything inside a custom-built Docker container
+
+One major downside: it's very, very resource-intensive
+ - while every effort is made to streamline image building--it watches for changes in repos, and only builds from that point--it's a very compute intensive process
+ - we tested a BinderHub pilot locally at UGA, and decided we just didn't have the resources or the demand to justify it, not when mybinder.org still exists
+ - a lot of universities ARE spinning up their own internal BinderHubs; if we need it, let us know!
+:::
 
 ## So much more
 
-Continuous integration, code testing, open access, study preregistration
+Continuous integration, code testing, open access, study preregistration.
 
-Links where you can learn more
+Links where you can learn more at the end of the slides.
 
-For now: research data management!
+## Thank you!
 
+Any questions?
 
+Take this survey before leaving today!
+
+![](assets/qr_postworkshop_survey.png)
+
+## Next up
+
+ - Grab some ☕️ and 🍩
+ - Dr. Kyle Johnsen on collaborative exercises around reproducible research practices
+
+![](assets/qr_postworkshop_survey.png)
+
+## Resources
+
+::: {.r-fit-text}
+1. Open Science Alliance (OSA) [website](https://openscialliance.github.io/), [GitHub organization](https://github.com/openscialliance/), and [repository for this workshop](https://github.com/openscialliance/data-donuts-apr2024)
+2. [Reproducible Project Template](https://github.com/the-turing-way/reproducible-project-template)
+3. [Cookiecutter Template](https://github.com/cookiecutter/cookiecutter)
+4. [The Turing Way](https://book.the-turing-way.org/)
+5. [Open Science Foundation](https://osf.io/) (OSF)
+6. [Center for Open Science (COS)](https://www.cos.io/)
+7. [Choose a License](https://choosealicense.com/) workflow
+8. [Journal of Open Source Software (JOSS)](https://joss.theoj.org/)
+9. [Journal of Open Source Education (JOSE)](https://jose.theoj.org/)
+10. [Zenodo](https://zenodo.org/)
+11. [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+12. [Interactive GitHub tutorials](https://skills.github.com/)
+13. [myBinder](https://mybinder.org/) and [BinderHub](https://binderhub.readthedocs.io/en/latest/)
+14. [Conda](https://docs.conda.io/en/latest/) and [Mamba](https://mamba.readthedocs.io/en/latest/)
+:::

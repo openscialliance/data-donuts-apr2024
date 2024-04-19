@@ -40,3 +40,182 @@ Research and Computational Data Management
 Open Science is the movement to make all scientific data, methods, and materials accessible to all levels of society.
 
 ![](assets/openscience1.jpg)
+
+## Examples of Open Science in practice
+
+![[DOI](https://doi.org/10.5281/zenodo.3332807)](assets/reproducibility.jpg)
+
+::: {.notes}
+Ask for some examples, if anyone is familiar (or can extrapolate from the previous slide)
+:::
+
+## Open Science Themes {auto-animate="true"}
+
+::: {os-id="data"}
+1. Open data
+:::
+::: {os-id="source"}
+2. Open source
+:::
+::: {os-id="methods"}
+3. Open methods
+:::
+::: {os-id="review"}
+4. Open review
+:::
+::: {os-id="access"}
+5. Open access
+:::
+::: {os-id="education"}
+6. Open education
+:::
+
+## {auto-animate="true"}
+::: {os-id="data" .bold}
+1. Open data
+   - Archived in a data repository ([Zenodo](https://zenodo.org/))
+   - Permalinked (DOI)
+   - Associated metadata
+   - Documentation for preprocessing
+:::
+::: {os-id="source" style="color: #999999; font-size: 18px;"}
+1. Open source
+:::
+::: {os-id="methods" style="color: #999999; font-size: 18px;"}
+1. Open methods
+:::
+::: {os-id="review" style="color: #999999; font-size: 18px;"}
+1. Open review
+:::
+::: {os-id="access" style="color: #999999; font-size: 18px;"}
+1. Open access
+:::
+::: {os-id="education" style="color: #999999; font-size: 18px;"}
+1. Open education
+:::
+
+## {auto-animate="true"}
+::: {os-id="data" style="color: #999999; font-size: 18px;"}
+1. Open data
+:::
+::: {os-id="source" .bold}
+2. Open source
+   - Public-facing, version-controlled repository ([GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), [BitBucket](https://bitbucket.org/), [forgejo](https://forgejo.org/), [gitea](https://about.gitea.com/))
+   - License, README, documentation, testing
+:::
+::: {os-id="methods" style="color: #999999; font-size: 18px;"}
+3. Open methods
+:::
+::: {os-id="review" style="color: #999999; font-size: 18px;"}
+4. Open review
+:::
+::: {os-id="access" style="color: #999999; font-size: 18px;"}
+5. Open access
+:::
+::: {os-id="education" style="color: #999999; font-size: 18px;"}
+6. Open education
+:::
+
+## {auto-animate="true"}
+::: {os-id="data" style="color: #999999; font-size: 18px;"}
+1. Open data
+:::
+::: {os-id="source" style="color: #999999; font-size: 18px;"}
+2. Open source
+:::
+::: {os-id="methods" .bold}
+3. Open methods
+   - Proofs
+   - Prepackaged examples (VMs or containers)
+   - Serialized models ([HuggingFace](https://huggingface.co/))
+   - Preregistration ([OSF](https://osf.io/))
+:::
+::: {os-id="review" style="color: #999999; font-size: 18px;"}
+4. Open review
+:::
+::: {os-id="access" style="color: #999999; font-size: 18px;"}
+5. Open access
+:::
+::: {os-id="education" style="color: #999999; font-size: 18px;"}
+6. Open education
+:::
+
+## {auto-animate="true"}
+::: {os-id="data" style="color: #999999; font-size: 18px;"}
+1. Open data
+:::
+::: {os-id="source" style="color: #999999; font-size: 18px;"}
+2. Open source
+:::
+::: {os-id="methods" style="color: #999999; font-size: 18px;"}
+3. Open methods
+:::
+::: {os-id="review" .bold}
+4. Open review
+   - Double-open review ([JOSS](https://joss.theoj.org/), [JOSE](https://jose.theoj.org/), [pyOpenSci](https://www.pyopensci.org/), [rOpenSci](https://ropensci.org/), [OpenReview](https://openreview.net/))
+   - Manuscripts as repos, Reviews as tickets
+:::
+::: {os-id="access" style="color: #999999; font-size: 18px;"}
+1. Open access
+:::
+::: {os-id="education" style="color: #999999; font-size: 18px;"}
+1. Open education
+:::
+
+## {auto-animate="true"}
+::: {os-id="data" style="color: #999999; font-size: 18px;"}
+1. Open data
+:::
+::: {os-id="source" style="color: #999999; font-size: 18px;"}
+2. Open source
+:::
+::: {os-id="methods" style="color: #999999; font-size: 18px;"}
+3. Open methods
+:::
+::: {os-id="review" style="color: #999999; font-size: 18px;"}
+4. Open review
+:::
+::: {os-id="access" .bold}
+5. Open access
+   - Preprints ([arXiv](https://arxiv.org/))
+   - Open access publication venues ([eLife](https://elifesciences.org/))
+:::
+::: {os-id="education" style="color: #999999; font-size: 18px;"}
+6. Open education
+:::
+
+## {auto-animate="true"}
+::: {os-id="data" style="color: #999999; font-size: 18px;"}
+1. Open data
+:::
+::: {os-id="source" style="color: #999999; font-size: 18px;"}
+2. Open source
+:::
+::: {os-id="methods" style="color: #999999; font-size: 18px;"}
+3. Open methods
+:::
+::: {os-id="review" style="color: #999999; font-size: 18px;"}
+4. Open review
+:::
+::: {os-id="access" style="color: #999999; font-size: 18px;"}
+5. Open access
+:::
+::: {os-id="education" .bold}
+6. Open education
+   - Open Science will generate a lot of artifacts; bring those into the classroom!
+   - Put materials on a public-facing repo (GitHub)
+   - Review course materials like a manuscript (JOSE)
+   - [The Carpentries](https://carpentries.org/index.html), OSF
+   - Workshops **just like this one**
+   - Your university library!
+:::
+
+## Open Science is HUGE
+
+Today, we'll focus on a small slice:
+
+How to get started **from zero** with reproducible and open research that's **good enough**
+
+(and: where to go to learn more)
+
+![](assets/open-umbrella.png)
